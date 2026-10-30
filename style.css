@@ -1,0 +1,115 @@
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,sans-serif;background:var(--bg);color:var(--ink)}body[data-theme=light]{--bg:#fff;--ink:#183f2d;--panel:#f2f6f3;--card:#f4f7f5;--field:#fff}body[data-theme=dark]{--bg:#10241b;--ink:#eef8f0;--panel:#1d392b;--card:#1d392b;--field:#2b4937}.container{width:min(90%,80rem);margin:auto}.site-header,.footer{background:#173f2d;color:white}.nav{display:flex;align-items:center;justify-content:space-between;min-height:5rem}.brand{font-size:1.7rem;font-weight:800;color:white;text-decoration:none}.nav-links{list-style:none;display:flex;gap:2.5rem}.nav-links a{color:white;text-decoration:none;font-size:.9rem}.menu-toggle{display:none}.hero{height:35rem;background:linear-gradient(#0002,#0002),url('images/mountains.webp') center/cover;display:grid;place-items:center;text-align:center}.hero h1{color:white;font-size:clamp(2rem,4vw,3.8rem);margin-bottom:1.8rem}.hero-cta{display:inline-block;background:white;color:#17412c;border-radius:.6rem;padding:1rem 1.5rem;text-decoration:none;font-weight:700}.equipment{padding-top:4rem}.equipment h2,.rental-panel h2{font-size:2rem;margin-bottom:1.6rem}.equipment-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem}.gear-card{background:var(--card);padding:1rem;border-radius:.7rem;border:2px solid transparent}.gear-card.selected,.gear-card:focus-within{border-color:#4d8a63}.gear-image{height:14rem;background:var(--field);display:grid;place-items:center;border-radius:.5rem;margin-bottom:1rem}.gear-image img{width:100%;height:100%;object-fit:contain}.gear-card h3{font-size:1.1rem;margin-bottom:.6rem}.gear-card p{font-size:.85rem;margin-bottom:.35rem}.gear-card strong{display:block;margin-top:1rem}.choose-gear{background:transparent;color:var(--ink);border:1px solid currentColor;border-radius:.4rem;padding:.5rem;margin-top:.8rem;cursor:pointer}.rental-wrap{padding-block:4rem 2rem}.rental-panel{background:var(--panel);padding:2rem;border-radius:.9rem}.form-grid,.form-bottom{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem 2rem}.form-grid label,.selected-label{display:flex;flex-direction:column;gap:.6rem;font-size:.85rem;font-weight:700}.form-grid input,.calculate-area select{padding:.9rem;width:100%;border:1px solid #c8d5cc;border-radius:.3rem;background:var(--field);color:var(--ink);font:inherit}.form-bottom{margin-top:1.4rem;align-items:end}.calculate-area{display:flex;align-items:end;gap:1rem}.calculate-area select{min-width:10rem}.calculate-btn{background:#17432d;color:white;border:0;border-radius:.35rem;padding:1rem;cursor:pointer;white-space:nowrap}.total{background:var(--field);padding:1rem;border-radius:.4rem;display:flex;flex-direction:column}.total span,.total small{font-size:.8rem}.total strong{font-size:1.5rem}.form-message{margin-top:.7rem}.info{padding-block:1.6rem}.info h2{font-size:1.5rem;margin-bottom:.7rem}.footer{margin-top:2rem;padding:2.2rem 0 1rem}.footer-inner{display:grid;grid-template-columns:1fr 1fr;gap:2rem}.footer h3{margin-bottom:.5rem}.footer p,.theme-label{font-size:.85rem}.theme-label{display:flex;gap:.7rem;margin-top:.7rem}.copyright{text-align:center;margin-top:2rem;font-size:.7rem!important}@media(max-width:700px){.container{width:calc(100% - 2rem)}.nav{min-height:4.5rem}.menu-toggle{display:flex;flex-direction:column;gap:.3rem;background:none;border:0;z-index:5}.menu-toggle span{width:1.5rem;height:.15rem;background:white}.nav-links{position:fixed;z-index:4;right:0;top:0;height:100dvh;width:min(80vw,19rem);background:#173f2d;flex-direction:column;justify-content:center;padding:2rem;transform:translateX(105%);transition:transform .2s}.nav-links.is-open{transform:translateX(0)}.hero{height:26rem}.hero h1{font-size:2.1rem}.equipment{padding-top:2.5rem}.equipment h2,.rental-panel h2{font-size:1.65rem}.equipment-grid,.form-grid,.form-bottom,.footer-inner{grid-template-columns:1fr}.gear-image{height:13rem}.rental-wrap{padding-top:2.5rem}.rental-panel{padding:1.2rem}.calculate-area{flex-direction:column;align-items:stretch}.calculate-btn{width:100%}}
+/* Pixel-aligned visual refinement based on user-exported Desktop – Light */
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.45}
+.container{width:89%;max-width:80rem}
+.nav{min-height:5.5rem}
+.brand{font-size:1.75rem}
+.hero{height:auto;aspect-ratio:959/435;background-image:url("images/figma-hero.webp");background-position:center;background-size:100% 100%;position:relative}
+.hero-content{position:absolute;inset:0}
+.hero h1{visibility:hidden}
+.hero-cta{position:absolute;top:63%;left:50%;transform:translate(-50%,-50%);width:21%;height:11%;opacity:0}
+.hero-cta:focus-visible{opacity:1;outline:3px solid #fff}
+.equipment{padding-top:3.4rem}
+.equipment h2{font-size:2.65rem;margin-bottom:1.8rem}
+.equipment-grid{gap:1.35rem}
+.gear-card{border:0;border-radius:1.1rem;padding:.55rem .6rem 1.65rem;background:#f4f7f5;min-height:26rem}
+.gear-card.selected{outline:3px solid #72a58a}
+.gear-image{height:13rem;background:#fff;margin-bottom:1rem}
+.gear-image img{object-fit:contain}
+.gear-card h3{font-size:1.55rem;margin-bottom:.6rem}
+.gear-card p{font-size:1rem;margin-bottom:.45rem}
+.gear-card strong{font-size:1.25rem;margin-top:1.45rem}
+.choose-gear{font-size:.78rem;padding:.25rem .5rem;opacity:.7}
+.rental-wrap{padding-top:4.6rem;padding-bottom:1.2rem}
+.rental-panel{border-radius:1.25rem;padding:2.1rem;background:#f4f7f5}
+.rental-panel h2{font-size:2.15rem;margin-bottom:1.2rem}
+.form-grid{gap:1rem 2rem}
+.form-grid label{font-size:1.05rem}
+.form-grid input{border:0;background:#fff;border-radius:.45rem;font-size:1rem}
+.form-bottom{margin-top:2rem;grid-template-columns:1fr 1fr;gap:2rem}
+.calculate-area{align-items:flex-end}
+.selected-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.calculate-area select{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.calculate-btn{font-size:1rem;min-width:12.5rem;border-radius:.5rem}
+.total{min-height:5rem}
+.total strong{font-size:1.65rem}
+.info{display:none}
+.info.is-visible{display:block}
+.footer{margin-top:1rem;padding-top:2rem}
+.footer h3{font-size:1.5rem}
+.footer p{font-size:.85rem;line-height:1.7}
+.copyright{margin-top:1.5rem}
+body[data-theme=dark] .gear-card,body[data-theme=dark] .rental-panel{background:var(--panel)}
+@media(max-width:700px){
+.container{width:calc(100% - 2rem)}
+.hero{aspect-ratio:auto;height:26rem;background-image:linear-gradient(#0005,#0005),url("images/figma-hero.webp");background-size:auto 100%;background-position:center}
+.hero-content{position:static}
+.hero h1{visibility:visible;font-size:2.1rem}
+.hero-cta{position:static;transform:none;opacity:1;width:auto;height:auto}
+.equipment h2{font-size:2rem}
+.gear-card{min-height:0}
+.gear-image{height:13rem}
+.rental-wrap{padding-top:2.5rem}
+.rental-panel{padding:1.25rem}
+.form-grid,.form-bottom{grid-template-columns:1fr}
+.calculate-btn{width:100%}
+}
+
+/* Fix: product pictures must never overflow into descriptions */
+.gear-card { min-width:0; overflow:hidden; }
+.gear-image { display:flex; align-items:center; justify-content:center; width:100%; height:10.5rem; min-width:0; overflow:hidden; }
+.gear-image img { display:block; width:auto; height:auto; max-width:100%; max-height:100%; object-fit:contain; flex-shrink:1; }
+.gear-card h3, .gear-card p, .gear-card strong { position:relative; z-index:1; }
+@media (max-width:700px) { .gear-image { height:12rem; } }
+
+/* Mobile corrections: the exported hero PNG already includes heading and CTA. */
+@media (max-width:700px){
+  html,body{max-width:100%;overflow-x:clip}
+  .hero{
+    height:auto;
+    aspect-ratio:959/435;
+    background-image:url("images/figma-hero.webp");
+    background-size:100% 100%;
+    background-position:center;
+    position:relative;
+    display:block;
+  }
+  .hero-content{position:absolute;inset:0;padding:0}
+  .hero h1{visibility:hidden;position:absolute}
+  .hero-cta{
+    position:absolute;top:63%;left:50%;
+    transform:translate(-50%,-50%);
+    width:32%;height:19%;min-height:44px;
+    padding:0;opacity:0;
+  }
+  .hero-cta:focus-visible{opacity:.85;outline:3px solid #fff}
+  .equipment-grid{grid-template-columns:minmax(0,1fr)}
+  .gear-card{min-width:0;overflow:hidden}
+  .gear-image{height:13rem;overflow:hidden}
+  .gear-image img{display:block;max-width:100%;max-height:100%;object-fit:contain}
+  .form-grid label,.form-bottom>*{min-width:0}
+  .form-grid input{min-width:0;width:100%;color:var(--ink)}
+  .total{min-width:0}
+  .nav-links{box-sizing:border-box}
+  .rental-panel{max-width:100%}
+}
+body[data-theme=dark] .form-grid input,body[data-theme=dark] .total{background:#2b4937;color:#f0f7f1}
+body[data-theme=dark] .form-grid input::placeholder{color:#b8cbbf}
+body[data-theme=dark] .gear-image{background:#f7faf8}
+body[data-theme=dark] .info{color:#eef8f0}
+
+/* Laboratory 9: explicit desktop breakpoint and responsive safeguards. */
+@media (min-width: 1024px) {
+  .equipment-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .form-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .form-bottom { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (min-width: 701px) and (max-width: 1023px) {
+  .equipment-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .form-bottom { grid-template-columns:minmax(0,1fr); }
+}
+@media (max-width: 700px) {
+  .form-grid { grid-template-columns:minmax(0,1fr); }
+  .form-grid input { max-width:100%; }
+}
+:where(a,button,input,select):focus-visible { outline: 3px solid #58a878; outline-offset: 3px; }
